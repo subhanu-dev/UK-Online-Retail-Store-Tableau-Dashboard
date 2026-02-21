@@ -16,4 +16,24 @@ Dataset link from UCI ML Repository: https://archive.ics.uci.edu/dataset/352/onl
 | Country     | Country where the customer resides                             | Nominal            | Country name                                                        |
 
 
-For 135,080 transactions the customer id is null.
+Total record Count - 541,909
+For 135,080 records the customer id is null.
+
+There are transactions where the quantity is negative. Most of those are cancellations which have the invoice no starting with C, but there are many others that still have negative quantities while having a regular invoice code. 
+
+Another thing is that each of the records reprent an item bought. each record doesn't mean transaction
+
+Feature generation for the Customer Segmentation
+- number of transactions (frequency)
+- Life time sales value(monetary)
+- Average order value
+- days passed since last transaction (recency)
+
+
+Calculated fields created
+
+- Total (Quantity*Unit price for transactions with positive quantities)
+- Return or Cancellation or a purchase - (Transactions with negative quantities were identified as reutrns or cancellations)
+
+
+
