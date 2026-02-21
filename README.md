@@ -29,11 +29,18 @@ Feature generation for the Customer Segmentation
 - Average order value
 - days passed since last transaction (recency)
 
+Clusters Segmentation  - K-Means
+
+| Centroid Id | Count | Avg Order Value | Frequency | Monetary    | Recency Days | Behavior Classification    |
+|-------------|-------|------------------|-----------|-------------|--------------|----------------------------|
+| 1           | 14    | 13,467.89        | 76.86     | 123,755.83  | 29.36        | High-Value VIPs            |
+| 2           | 1,056 | 312.92           | 1.55      | 475.42      | 249.14       | At-Risk/Churned            |
+| 3           | 2,959 | 373.95           | 3.27      | 1,187.15    | 45.08        | Engaged Low-Spenders       |
+| 4           | 310   | 589.49           | 17.75     | 9,053.15    | 15.59        | Active & Reliable          |
+
 
 Calculated fields created
 
 - Total (Quantity*Unit price for transactions with positive quantities)
 - Return or Cancellation or a purchase - (Transactions with negative quantities were identified as reutrns or cancellations)
-
-
 
