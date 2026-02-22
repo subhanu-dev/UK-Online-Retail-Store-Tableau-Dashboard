@@ -10,7 +10,8 @@ The data source for this project is a real world dataset of all the transactions
 
 Dataset link from UCI ML Repository: https://archive.ics.uci.edu/dataset/352/online+retail
 
-<b>Tableau Dashboard live here in Tableau Public 📊🔗</b>: https://public.tableau.com/views/uk_online_retail_dashboard/UKOnlineRetailDashboard?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+<b>Tableau Dashboard live here in Tableau Public 📊🔗</b>:
+https://public.tableau.com/views/uk_online_retail_dashboard/UKOnlineRetailDashboard?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
 
 Data Fields Descriptions
@@ -79,7 +80,7 @@ Calculated fields created
 the product with the most amount of negative quantities is  TRAVEL CARD WALLET - I LOVE LONDON, a lot of it has been thrown away due to printing smudges.
 
 
-Tableau Dashboard also incorporates created features at the customer level as well as the Segmented Clusters.
+Tableau Dashboard also incorporates created features at the customer level as well as the Segmented Clusters.The Dataset created inside of Bigquery for customers is joined with the transactional table via a left join. 
 
 ### Dashboard Preview
 
