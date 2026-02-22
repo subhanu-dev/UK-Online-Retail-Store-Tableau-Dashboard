@@ -1,4 +1,4 @@
-# UK Online Store Analysis using BigQuery, RFM Segmentations using Bigquery ML & Tableau for Dashboarding
+# UK Online Store - RFM Segmentations & Analysis using Bigquery & Tableau 
 
 **Tech Stack**
 
@@ -42,7 +42,14 @@ Feature generation for the Customer Segmentation
 - Average order value
 - days passed since last transaction (recency)
 
+BigQuery ML Was used to create model with the following features
+
+<img src="data_files/imgs/kmeansmodel_img.png" width="500px">
+
+
 Clusters Segmentation  - K-Means
+
+Resultant Cluster Features
 
 | Centroid Id | Count | Avg Order Value | Frequency | Monetary    | Recency Days | Behavior Classification    |
 |-------------|-------|------------------|-----------|-------------|--------------|----------------------------|
@@ -53,8 +60,6 @@ Clusters Segmentation  - K-Means
 
 
 
-
-![](data_files/imgs/kmeansmodel_img.png)
 
 
 
