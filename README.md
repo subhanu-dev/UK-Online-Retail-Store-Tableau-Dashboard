@@ -1,4 +1,4 @@
-# UK Online Store - RFM Segmentations & Analysis using Bigquery & Tableau 
+# UK Online Store - RFM Segmentations & Analysis using BigQuery & Tableau 
 
 **Tech Stack**
 
