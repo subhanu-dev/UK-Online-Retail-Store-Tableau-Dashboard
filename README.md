@@ -1,8 +1,19 @@
+# UK Online Store Analysis using BigQuery, RFM Segmentations using Bigquery ML & Tableau for Dashboarding
 
-This is a transactional data set which contains all the transactions occurring between 01/12/2010 and 09/12/2011 for a UK-based and registered non-store online retail.The company mainly sells unique all-occasion gifts. Many customers of the company are wholesalers.
+**Tech Stack**
+
+![Google BigQuery](https://img.shields.io/badge/Google%20BigQuery-669DF6?style=for-the-badge&logo=googlebigquery&logoColor=white)
+![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white)
+
+
+The data source for this project is a real world dataset of all the transactions occurring between 01/12/2010 and 09/12/2011 for a UK-based and registered non-store online retail.The company mainly sells unique all-occasion gifts. Many customers of the company are wholesalers.
 
 Dataset link from UCI ML Repository: https://archive.ics.uci.edu/dataset/352/online+retail
 
+<b>Tableau Dashboard live here in Tableau Public 📊🔗</b>: https://public.tableau.com/views/uk_online_retail_dashboard/UKOnlineRetailDashboard?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+
+
+Data Fields Descriptions
 
 | Column Name | Description                                                    | Data Type          | Additional Notes                                                    |
 | ----------- | -------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------- |
@@ -23,6 +34,8 @@ There are transactions where the quantity is negative. Most of those are cancell
 
 Another thing is that each of the records reprent an item bought. each record doesn't mean transaction
 
+## Customer Segmentation in BigQuery
+
 Feature generation for the Customer Segmentation
 - number of transactions (frequency)
 - Life time sales value(monetary)
@@ -39,8 +52,46 @@ Clusters Segmentation  - K-Means
 | 4           | 310   | 589.49           | 17.75     | 9,053.15    | 15.59        | Active & Reliable          |
 
 
+
+
+![](data_files/imgs/kmeansmodel_img.png)
+
+
+
+## Tableau Dashboard
+
+
 Calculated fields created
 
 - Total (Quantity*Unit price for transactions with positive quantities)
 - Return or Cancellation or a purchase - (Transactions with negative quantities were identified as reutrns or cancellations)
+- day of the week
+- cancellation rate
+- hour (Hour of transaction)
+- Top hour (top hour with most txns)
+- Segment Calc (Textal Descriptions for Clusters)
 
+the product with the most amount of negative quantities is  TRAVEL CARD WALLET - I LOVE LONDON, a lot of it has been thrown away due to printing smudges.
+
+
+Tableau Dashboard also incorporates created features at the customer level as well as the Segmented Clusters.
+
+### Dashboard Preview
+
+
+![](data_files/imgs/dash1.png)
+
+
+![](data_files/imgs/dash2.png)
+
+
+![](data_files/imgs/dash3.png)
+
+
+
+
+
+
+
+---
+By [Subhanu](https://github.com/subhanu-dev) 🚀
