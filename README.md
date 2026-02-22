@@ -10,7 +10,7 @@ The data source for this project is a real world dataset of all the transactions
 
 Dataset link from UCI ML Repository: https://archive.ics.uci.edu/dataset/352/online+retail
 
-<b>Tableau Dashboard live here in Tableau Public 📊🔗</b>:
+<b>Tableau Dashboard live here in Tableau Public 📊🔗</b>: <br>
 https://public.tableau.com/views/uk_online_retail_dashboard/UKOnlineRetailDashboard?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
 
